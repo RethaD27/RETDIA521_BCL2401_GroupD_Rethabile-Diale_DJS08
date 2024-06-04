@@ -15,7 +15,7 @@ import HostLayout from "./components/HostLayout";
 
 import "./server";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -38,4 +38,4 @@ function App() {
   );
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+// ReactDOM.createRoot(document.getElementById("root")).render(<App />);
