@@ -1,26 +1,19 @@
-// import React from "react"
+import React from "react";
+import ReactDom from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./components/Home.jsx";
-import About from "./components/About.jsx";
-// import Navbar from "./components/Navbar.jsx";
-import "./server.jsx";
-import Vans from "./Vans.jsx";
 
-/**
- * Challenge:
- * Bootstrap the VanLife project by creating the first 2 routes:
- * Home and About.
- *
- * Also include the navbar that can link between the two routes.
- * For now, you'll either need to copy/paste the navbar code
- * to both Home and About pages, or you'll need to find a place
- * to put it where it can be shared between the two pages.
- * (Don't overthink this part - just do whatever is easiest for
- * you because we'll learn a better approach very soon)
- *
- * Review challenge: do all the CSS yourself based on the design
- * linked in the slides.
- */
+// import Navbar from "./components/Navbar.jsx";
+import Vans from "./pages/Vans/Vans.jsx";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import VanDetail from "./pages/Vans/VanDetail";
+import Dashboard from "./pages/Host/Dashboard";
+import Income from "./pages/Host/Income";
+import Reviews from "./pages/Host/Reviews";
+import Layout from "./components/Layout";
+import HostLayout from "./components/HostLayout";
+
+import "./server";
 
 export default function App() {
   return (
