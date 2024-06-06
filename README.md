@@ -2,41 +2,83 @@
 
 🎥 INSERT LOOM PRESENTATION LINK: [Here]
 
-After cloning the repo, run `npm install` to install the dependencies 
+## Van Rental Application
+This is a React-based web application for a van rental service. The app includes various pages such as home, about, van listings, and host functionalities for managing van rentals. It also features authentication for host-specific routes.
 
-Are you ready to get stuck into some React Router? For this challenge, you are required to code along with the lecturer from this lesson: [VanLife Project Bootstrapping](https://scrimba.com/learn/react/vanlife-project-bootstrapping-co8bc40b191eec875ecf00b23).
+# Features
+Home Page: Displays the main landing page.
+About Page: Provides information about the van rental service.
+Van Listings: Shows a list of available vans for rent.
+Van Details: Displays detailed information about a specific van.
+Login: Allows users to log in to their accounts.
+Host Dashboard: Hosts can manage their van listings, income, and reviews.
+Host Van Management: Hosts can view and edit details, pricing, and photos of their vans.
 
-For this challenge you are required to code along with the lecturer from this lesson: https://scrimba.com/learn/react/vanlife-project-bootstrapping-co8bc40b191eec875ecf00b23
+File Structure
+/src
+  ├── components
+  │   ├── Layout.jsx
+  │   ├── HostLayout.jsx
+  │   └── AuthRequired.jsx
+  ├── pages
+  │   ├── Home.jsx
+  │   ├── About.jsx
+  │   ├── Login.jsx
+  │   ├── NotFound.jsx
+  │   ├── Vans
+  │   │   ├── Vans.jsx
+  │   │   ├── VanDetail.jsx
+  │   ├── Host
+  │   │   ├─- Dashboard.jsx
+  │   │   ├── Income.jsx
+  │   │   ├── Reviews.jsx
+  │   │   ├── HostVans.jsx
+  │   │   ├── HostVanDetail.jsx
+  │   │   ├── HostVanInfo.jsx
+  │   │   ├── HostVanPricing.jsx
+  │   │   ├── HostVanPhotos.jsx
+  ├── App.jsx
+  ├── index.jsx
+  ├── index.css
+  ├── server.js
 
-The starter code has all the CSS styling required for the project; you will just need to link the corresponding classes as you code along. Jump into the start code here: [GitHub Repository](https://github.com/CodeSpace-Academy/StudentNo_Classcode_Group_Name-Surname_DJS08/tree/main).
+Dependencies
+react
+react-dom
+react-router-dom
+@fake-server/server (for mock server setup)
+Components
+Layout.jsx
+The main layout component that wraps around the non-host routes.
 
-The focus for this project will be to understand routing and present your code. Along with your code, you will need to submit a recorded presentation talking through the presentation points included below.
+HostLayout.jsx
+The layout component for host-specific routes.
 
-## React Routing Presentation Talking Points
+AuthRequired.jsx
+A higher-order component (HOC) that protects host routes and requires authentication.
 
-For your recorded presentation, you will be discussing key concepts related to React Router, an essential tool for building single-page applications. To illustrate your understanding, address the following three questions in your presentation. These questions are designed to test your knowledge of the content from the "Advanced React Routing" Van Life Project, including setup, functionality, and application of React Router.
+Pages
+Home.jsx
+The landing page of the application.
 
-### Question 1: Explain the Setup and Basic Configuration of React Router
+About.jsx
+Contains information about the van rental service.
 
-**Key Points to Cover:**
-- What is the purpose of using React Router in a React application?
-- How do you set up React Router using `BrowserRouter` as shown in the lessons?
-- Describe the role of the `<Routes>` and `<Route>` components in defining the navigation structure.
+Login.jsx
+User login page.
 
-### Question 2: Application of Route Parameters and Nested Routes
+NotFound.jsx
+Displays a 404 error for undefined routes.
 
-**Key Points to Cover:**
-- Explain what route parameters are and how they are used in React Router, including the use of `useParams()` to access these parameters.
-- Discuss the concept of nested routes as introduced in the lessons. What are nested routes, and how do they benefit the structure of a React application?
-- Provide an example, such as the configuration for nested routes in the VanLife project.
-
-### Question 3: Implementation of Navigation Controls and Dynamic Linking
-
-**Key Points to Cover:**
-- How does the `<Link>` component enhance navigation within a React application?
-- Describe the use of `NavLink` for active styling. What makes `NavLink` different from the basic `Link` component?
-- Discuss the use of search parameters and the `useSearchParams` hook to dynamically filter content, as seen in the VanLife project challenges.
-
-Be prepared to provide code snippets and real-world application examples from your Van Life Project to support your explanations.
-
-Make sure to submit your project to the DJS08 Project Tab on the LMS. Include a link to your Loom Presentation in your README.
+Vans
+Vans.jsx: Displays a list of vans.
+VanDetail.jsx: Shows details of a specific van.
+Host
+Dashboard.jsx: Host's dashboard showing an overview.
+Income.jsx: Displays the host's income.
+Reviews.jsx: Shows reviews for the host's vans.
+HostVans.jsx: Displays a list of the host's vans.
+HostVanDetail.jsx: Shows details of a specific van owned by the host.
+HostVanInfo.jsx: Displays information about the van.
+HostVanPricing.jsx: Allows the host to manage van pricing.
+HostVanPhotos.jsx: Allows the host to manage van photos.
