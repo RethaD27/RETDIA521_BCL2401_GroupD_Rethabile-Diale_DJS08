@@ -14,34 +14,6 @@ This is a React-based web application for a van rental service. The app includes
 * Host Dashboard: Hosts can manage their van listings, income, and reviews.
 * Host Van Management: Hosts can view and edit details, pricing, and photos of their vans.
 
-## File Structure
-/src
-  ├── components
-  │   ├── Layout.jsx
-  │   ├── HostLayout.jsx
-  │   └── AuthRequired.jsx
-  ├── pages
-  │   ├── Home.jsx
-  │   ├── About.jsx
-  │   ├── Login.jsx
-  │   ├── NotFound.jsx
-  │   ├── Vans
-  │   │   ├── Vans.jsx
-  │   │   ├── VanDetail.jsx
-  │   ├── Host
-  │   │   ├─- Dashboard.jsx
-  │   │   ├── Income.jsx
-  │   │   ├── Reviews.jsx
-  │   │   ├── HostVans.jsx
-  │   │   ├── HostVanDetail.jsx
-  │   │   ├── HostVanInfo.jsx
-  │   │   ├── HostVanPricing.jsx
-  │   │   ├── HostVanPhotos.jsx
-  ├── App.jsx
-  ├── index.jsx
-  ├── index.css
-  ├── server.js
-
 ## Dependencies
 * react
 * react-dom
